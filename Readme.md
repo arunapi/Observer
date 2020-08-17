@@ -1,8 +1,8 @@
-#Observer
+# Observer
 
 This is a sample application that implements `Observer` design pattern from the [GoF book](https://www.amazon.com/gp/product/0201633612/ref=as_li_tl)
 
-##Observer Design Pattern
+## Observer Design Pattern
 
 ```Define a one to many relationship between objects, so that when one object changes state all its dependents are notified```
 
@@ -17,15 +17,16 @@ Customer places an order at the FoodTruck. [See the test](../master/src/test/jav
 
 When the food is ready FoodTruck notifies the customers. [See the test](../master/src/test/java/com/arunapi/observer/FoodTruckTest.java)
 
-###Change Manager
+### Change Manager
 
 A cashier at the food truck can act as a `Change Manager`, which implements the `Mediator` design pattern.
 The purpose of ChangeManager is to encapsulate the complexities of managing observers.
 
 
-###Aspect
+### Aspect
 
-When the pizza is ready, FoodTruck need to notify only the customers who has ordered Pizza. [See the test](../master/src/test/java/com/arunapi/observer/FoodTruckTest.java)
+When the pizza is ready, FoodTruck need to notify only the customers who has ordered the Pizza. [See the test](../master/src/test/java/com/arunapi/observer/FoodTruckTest.java)
+
 You can use an Aspect, when an observer attach itself to the Subject.
 Subject will notify when the observers based on the aspect.
 Alternatively this complexity can be encapsulated in the `ChangeManager`
