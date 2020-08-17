@@ -13,8 +13,9 @@ In this example application the Subject is a `FoodTruck` and Observer is a `Cust
 At a carnival you will see a number of food trucks and people hanging around order food and picking them up whenever their names are called.
 I am using this as an example to demo the Observer pattern.
 
-Customer places an order at the FoodTruck. [See the test](../master/test/java/com/arunapi/observer/FoodTruckTest.java)
-When the food is ready FoodTruck notifies the customers. [See the test](../master/test/java/com/arunapi/observer/FoodTruckTest.java)
+Customer places an order at the FoodTruck. [See the test](../master/src/test/java/com/arunapi/observer/FoodTruckTest.java)
+
+When the food is ready FoodTruck notifies the customers. [See the test](../master/src/test/java/com/arunapi/observer/FoodTruckTest.java)
 
 ###Change Manager
 
@@ -24,7 +25,7 @@ The purpose of ChangeManager is to encapsulate the complexities of managing obse
 
 ###Aspect
 
-When the pizza is ready, FoodTruck need to notify only the customers who has ordered Pizza. [See the test](../master/test/java/com/arunapi/observer/FoodTruckTest.java)
+When the pizza is ready, FoodTruck need to notify only the customers who has ordered Pizza. [See the test](../master/src/test/java/com/arunapi/observer/FoodTruckTest.java)
 You can use an Aspect, when an observer attach itself to the Subject.
 Subject will notify when the observers based on the aspect.
 Alternatively this complexity can be encapsulated in the `ChangeManager`
